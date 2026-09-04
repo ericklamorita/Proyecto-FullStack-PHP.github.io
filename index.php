@@ -1,2 +1,2 @@
 <?php
-echo "Hello, World!";
+echo "XAMPP y PHP están funcionando correctamente";
