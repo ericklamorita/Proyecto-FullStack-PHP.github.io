@@ -746,3 +746,37 @@ No debe utilizarse únicamente para “poner letras gruesas”. Su función prin
 5. No utilizar CSS, JavaScript, PHP ni Bootstrap todavía.
 
 El contenido debe ser escrito por Erick. Los ejemplos de la lección sirven como referencia de estructura y no como solución para la tienda.
+
+
+### Revisión del Laboratorio 1.3
+
+**Estado: pendiente de una corrección menor.**
+
+La versión revisada ya aplica correctamente:
+
+- [x] Una lista no ordenada `ul` dentro de cada producto.
+- [x] Una lista ordenada `ol` para el procedimiento de retiro.
+- [x] Un aviso importante mediante `strong`.
+- [x] La estructura semántica construida en los laboratorios anteriores.
+- [x] Las rutas `assets/images/` escritas correctamente en el código presentado.
+- [ ] Tres características en cada producto.
+
+Cada producto contiene actualmente dos elementos `li`. Para cumplir el requisito del laboratorio, debe agregarse una tercera característica a cada lista.
+
+Ejemplo del patrón requerido:
+
+```html
+<ul>
+    <li>Primera característica</li>
+    <li>Segunda característica</li>
+    <li>Tercera característica</li>
+</ul>
+```
+
+El aviso de retiro puede escribirse de forma más natural así:
+
+```html
+<p><strong>Realiza tu retiro en nuestra tienda física y paga en efectivo o con tarjeta.</strong></p>
+```
+
+> Nota: el código revisado fue presentado en la conversación. El archivo `index.php` de GitHub todavía contiene la versión anterior del laboratorio.
