@@ -31,4 +31,5 @@ Cada concepto nuevo se guardará en el archivo correspondiente e incluirá, cuan
 - [x] Capítulo 0 — Entorno y funcionamiento web.
 - [x] Lección 1.1 — Anatomía y estructura semántica de HTML.
 - [x] Laboratorio 1.1 — Primera estructura de la tienda.
-- [ ] Lección 1.2 — Imágenes, rutas y atributos importantes (en curso).
+- [x] Lección 1.2 — Imágenes, rutas y atributos importantes.
+- [x] Laboratorio 1.2 — Imágenes locales y rutas relativas.
