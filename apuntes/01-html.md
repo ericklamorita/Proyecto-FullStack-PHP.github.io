@@ -2,7 +2,9 @@
 
 [← Volver al índice general](../APUNTES_CURSO.md)
 
-## 1.1 ¿Qué es HTML?
+## Lección 1.1 — Anatomía y estructura semántica
+
+### 1.1.1 ¿Qué es HTML?
 
 HTML significa **HyperText Markup Language** o lenguaje de marcado de hipertexto.
 
@@ -21,7 +23,7 @@ Ejemplo:
 | Etiqueta de cierre | `</h1>` |
 | Elemento completo | `<h1>Biblioteca Central</h1>` |
 
-## 1.2 Atributos
+### 1.1.2 Atributos
 
 Los atributos agregan información a un elemento.
 
@@ -38,7 +40,7 @@ Los atributos agregan información a un elemento.
 
 Los valores de los atributos normalmente se escriben entre comillas.
 
-## 1.3 Estructura básica de un documento
+### 1.1.3 Estructura básica de un documento
 
 ```html
 <!DOCTYPE html>
@@ -86,7 +88,7 @@ Los valores de los atributos normalmente se escriben entre comillas.
 | `<title>` | En la pestaña del navegador |
 | `<h1>` | Dentro de la página |
 
-## 1.4 Jerarquía de encabezados
+### 1.1.4 Jerarquía de encabezados
 
 Los encabezados deben representar la organización del contenido:
 
@@ -112,7 +114,7 @@ Ejemplo correcto:
 
 Si la sección ya tiene un `h2`, el nombre del producto normalmente debe ser un `h3`.
 
-## 1.5 HTML semántico
+### 1.1.5 HTML semántico
 
 Una etiqueta semántica describe la función de su contenido.
 
@@ -128,7 +130,7 @@ Una etiqueta semántica describe la función de su contenido.
 
 La semántica ayuda a navegadores, buscadores, lectores de pantalla y programadores a comprender la página.
 
-## 1.6 Diferencia entre `section`, `article` y `div`
+### 1.1.6 Diferencia entre `section`, `article` y `div`
 
 | Elemento | Cuándo utilizarlo |
 |---|---|
@@ -160,7 +162,7 @@ Cada producto puede utilizar `article` porque posee su propio nombre, descripci�
 
 `article` no significa únicamente un artículo de periódico. También puede representar productos, noticias, publicaciones, comentarios o recetas.
 
-## 1.7 Navegación con `nav`
+### 1.1.7 Navegación con `nav`
 
 `nav` identifica un conjunto importante de enlaces. No carga productos, no consulta la base de datos y no ejecuta PHP.
 
@@ -183,7 +185,7 @@ Cada producto puede utilizar `article` porque posee su propio nombre, descripci�
 
 La navegación principal suele contener secciones generales. Un índice secundario puede contener enlaces hacia productos específicos.
 
-## 1.8 Relación entre `href` e `id`
+### 1.1.8 Relación entre `href` e `id`
 
 El enlace indica el destino y el `id` identifica el elemento de destino.
 
@@ -241,7 +243,7 @@ Una señal es que la dirección cambia a algo parecido a:
 http://localhost/Proyecto-FullStack-PHP/#productos
 ```
 
-## 1.9 Tipos de valores de `href`
+### 1.1.9 Tipos de valores de `href`
 
 | `href` | Resultado |
 |---|---|
@@ -250,7 +252,7 @@ http://localhost/Proyecto-FullStack-PHP/#productos
 | `https://ejemplo.com` | Abre otro sitio web |
 | `productos.php#cargador` | Abre otra página y busca una sección específica |
 
-## 1.10 Enlaces externos
+### 1.1.10 Enlaces externos
 
 Una dirección web no debe colocarse dentro de un encabezado solamente para mostrarla.
 
@@ -278,7 +280,7 @@ El patrón general es:
 <a href="DIRECCIÓN">Texto visible para el usuario</a>
 ```
 
-## 1.11 Otros usos de `id`
+### 1.1.11 Otros usos de `id`
 
 Además de los enlaces internos, un `id` podrá utilizarse más adelante desde CSS y JavaScript.
 
@@ -298,7 +300,7 @@ document.getElementById("cargador-telefono");
 
 Por ahora, lo importante es utilizarlo como identificador único y como destino de los enlaces internos.
 
-## 1.12 Navegación principal e índice de productos
+### 1.1.12 Navegación principal e índice de productos
 
 Aunque ambos se escriben con enlaces, cumplen propósitos distintos.
 
@@ -349,7 +351,7 @@ minúsculas + sin tildes + palabras-separadas-por-guiones
 
 Esta convención reduce errores al relacionar HTML, CSS y JavaScript.
 
-## 1.13 Un solo título principal y coincidencia exacta de destinos
+### 1.1.13 Un solo título principal y coincidencia exacta de destinos
 
 Normalmente cada página debe tener un `h1` que identifique su tema principal. Los títulos de las secciones internas continúan con `h2`.
 
@@ -387,9 +389,9 @@ Debe utilizarse exactamente el mismo identificador:
 
 ---
 
-# Práctica actual
+### Ubicación y ejecución
 
-## Resultado final del Laboratorio 1.1
+### Resultado final
 
 **Estado: aprobado.** La versión final contiene un documento HTML5 completo, estructura semántica, jerarquía correcta de encabezados, navegación interna, tres productos independientes, retiro en tienda y contacto.
 
@@ -432,11 +434,11 @@ La página debe probarse mediante:
 http://localhost/Proyecto-FullStack-PHP/
 ```
 
-## Estado de la revisión actual
+### Estado de la revisión
 
 La versión presentada ya contiene una estructura HTML válida, tres productos semánticos y enlaces externos visibles. Para cerrar el laboratorio todavía falta transformar el menú en una navegación de secciones generales, normalizar los identificadores, agregar una cuarta opción y crear las secciones de bienvenida y retiro físico.
 
-## Requisitos pendientes de la segunda versión
+### Requisitos evaluados
 
 - [x] Mantener el documento HTML5 completo.
 - [x] Utilizar un solo `h1` principal.
@@ -452,7 +454,7 @@ La versión presentada ya contiene una estructura HTML válida, tres productos s
 - [ ] Probar todos los enlaces desde `localhost`.
 - [ ] Revisar antes de hacer `commit` y `push`.
 
-## Errores corregidos durante la práctica
+### Errores corregidos
 
 | Situación | Corrección |
 |---|---|
@@ -463,3 +465,141 @@ La versión presentada ya contiene una estructura HTML válida, tres productos s
 | Identificadores con mayúsculas y tildes | Usar minúsculas, sin tildes y con guiones |
 | Creer que `id` llama al enlace | Recordar que `href="#nombre"` busca `id="nombre"` |
 | Menú principal dirigido solo a productos | Usar secciones generales para la navegación principal |
+---
+
+## Lección 1.2 — Imágenes, rutas y atributos importantes
+
+### 1.2.1 El elemento `img`
+
+Una imagen se incorpora con el elemento `img`:
+
+```html
+<img src="imagenes/paisaje.jpg" alt="Montañas verdes bajo un cielo azul">
+```
+
+`img` es un elemento vacío: no contiene texto interno y no utiliza una etiqueta de cierre `</img>`.
+
+| Parte | Función |
+|---|---|
+| `img` | Indica que se mostrará una imagen |
+| `src` | Especifica dónde se encuentra el archivo |
+| `alt` | Describe la imagen cuando no puede verse |
+
+### 1.2.2 Importancia de `alt`
+
+El atributo `alt` no debe limitarse a repetir “imagen”. Debe comunicar la información relevante que aporta la imagen.
+
+| Imagen | `alt` adecuado |
+|---|---|
+| Producto | `alt="Cargador de pared blanco con puerto USB"` |
+| Logotipo | `alt="Tienda Don Erick"` |
+| Decoración sin significado | `alt=""` |
+
+El texto alternativo ayuda a personas que utilizan lectores de pantalla y también aparece conceptualmente cuando la imagen no puede cargarse.
+
+### 1.2.3 Rutas relativas
+
+Una ruta relativa parte desde la ubicación del archivo HTML o PHP actual.
+
+Supongamos esta estructura:
+
+```text
+Proyecto-FullStack-PHP/
+├── index.php
+└── assets/
+    └── images/
+        └── cargador.jpg
+```
+
+Desde `index.php`, la ruta es:
+
+```html
+<img src="assets/images/cargador.jpg" alt="Cargador de pared">
+```
+
+| Ruta | Significado |
+|---|---|
+| `foto.jpg` | El archivo está en la misma carpeta |
+| `images/foto.jpg` | Está dentro de una subcarpeta |
+| `assets/images/foto.jpg` | Está dentro de dos subcarpetas |
+| `../foto.jpg` | Se sube una carpeta para buscar el archivo |
+| `https://sitio.com/foto.jpg` | La imagen se obtiene desde otro sitio web |
+
+En HTML se utiliza `/`, incluso cuando el proyecto está en Windows. No se deben escribir rutas locales como:
+
+```text
+C:\Users\Erick\Pictures\foto.jpg
+```
+
+Esa dirección solo existe en la computadora de Erick y dejaría de funcionar al publicar la página.
+
+### 1.2.4 Nombres de archivos
+
+Para evitar errores se utilizará esta convención:
+
+```text
+minúsculas + sin tildes + sin espacios + guiones
+```
+
+| Evitar | Preferir |
+|---|---|
+| `Cargador Teléfono.JPG` | `cargador-telefono.jpg` |
+| `Batería portátil.png` | `bateria-portatil.png` |
+
+La extensión escrita en `src` debe coincidir con el archivo real. `.jpg`, `.png` y `.webp` no son intercambiables.
+
+### 1.2.5 Formatos comunes
+
+| Formato | Uso habitual |
+|---|---|
+| JPEG/JPG | Fotografías con muchos colores |
+| PNG | Imágenes que necesitan transparencia |
+| WebP | Imágenes web con buena compresión |
+| SVG | Logotipos, iconos y gráficos vectoriales |
+
+### 1.2.6 `figure` y `figcaption`
+
+Cuando una imagen necesita un texto explicativo asociado, puede agruparse así:
+
+```html
+<figure>
+    <img src="assets/images/montana.jpg" alt="Sendero rodeado de montañas">
+    <figcaption>Ruta principal del parque nacional.</figcaption>
+</figure>
+```
+
+- `figure` agrupa contenido visual independiente.
+- `figcaption` proporciona una leyenda visible.
+- `alt` sigue siendo necesario porque cumple una función de accesibilidad diferente.
+
+### 1.2.7 Errores frecuentes
+
+| Error | Consecuencia |
+|---|---|
+| Ruta o extensión incorrecta | La imagen no aparece y puede producirse un `404` |
+| Usar `\` en la ruta | El enlace no sigue la convención web |
+| Escribir una ruta de Windows | Solo funciona en una computadora específica |
+| Omitir `alt` | Se reduce la accesibilidad |
+| Utilizar una URL de otra tienda | La imagen depende de un servidor ajeno |
+| Cambiar el nombre del archivo sin cambiar `src` | La ruta deja de coincidir |
+
+### Laboratorio 1.2 — Imágenes locales de productos
+
+Objetivo: agregar una imagen local a cada producto sin utilizar CSS.
+
+1. Crear dentro del proyecto las carpetas `assets/images`.
+2. Conseguir tres imágenes propias o autorizadas para la práctica.
+3. Renombrarlas usando minúsculas, sin tildes ni espacios.
+4. Colocar cada archivo dentro de `assets/images`.
+5. Agregar un elemento `img` dentro de cada `article`, después del `h3`.
+6. Escribir un `alt` específico para cada producto.
+7. Probar la página desde `http://localhost/Proyecto-FullStack-PHP/`.
+8. Revisar en Network si alguna imagen devuelve `404`.
+
+Restricciones del laboratorio:
+
+- No utilizar CSS todavía.
+- No escribir rutas absolutas de Windows.
+- No copiar el ejemplo como solución completa.
+- No hacer `push` hasta que las tres imágenes aparezcan correctamente.
+
