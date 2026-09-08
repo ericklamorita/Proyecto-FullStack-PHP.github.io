@@ -465,6 +465,57 @@ document.getElementById("cargador-telefono");
 
 Por ahora, lo importante es utilizarlo como identificador único y como destino de los enlaces internos.
 
+## 1.12 Navegación principal e índice de productos
+
+Aunque ambos se escriben con enlaces, cumplen propósitos distintos.
+
+| Tipo | Contenido habitual | Ejemplo |
+|---|---|---|
+| Navegación principal | Secciones generales del sitio | Inicio, Productos, Retiro, Contacto |
+| Índice de productos | Elementos específicos de un catálogo | Cargador, batería, audífonos |
+
+La navegación principal ayuda al usuario a comprender las partes grandes de la página. Los enlaces hacia productos individuales pueden mantenerse como un índice secundario dentro de la sección de productos.
+
+Ejemplo de otro contexto:
+
+```html
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#libros">Libros</a></li>
+        <li><a href="#prestamos">Préstamos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+```
+
+Cada enlace necesita un destino con el mismo nombre:
+
+```html
+<section id="inicio">...</section>
+<section id="libros">...</section>
+<section id="prestamos">...</section>
+<footer id="contacto">...</footer>
+```
+
+Un `id` también puede colocarse en `article` cuando se necesita enlazar directamente a un producto, pero eso no convierte automáticamente esos enlaces en una navegación principal.
+
+### Convención de escritura adoptada
+
+Para todos los identificadores del proyecto se utilizará:
+
+```text
+minúsculas + sin tildes + palabras-separadas-por-guiones
+```
+
+| Evitar | Preferir |
+|---|---|
+| `Cargador-de-teléfono` | `cargador-telefono` |
+| `Cargador-para-carro` | `cargador-carro` |
+| `Bateria-portatil` | `bateria-portatil` |
+
+Esta convención reduce errores al relacionar HTML, CSS y JavaScript.
+
 ---
 
 # Práctica actual
@@ -483,19 +534,23 @@ La página debe probarse mediante:
 http://localhost/Proyecto-FullStack-PHP/
 ```
 
+## Estado de la revisión actual
+
+La versión presentada ya contiene una estructura HTML válida, tres productos semánticos y enlaces externos visibles. Para cerrar el laboratorio todavía falta transformar el menú en una navegación de secciones generales, normalizar los identificadores, agregar una cuarta opción y crear las secciones de bienvenida y retiro físico.
+
 ## Requisitos pendientes de la segunda versión
 
-- [ ] Mantener el documento HTML5 completo.
-- [ ] Utilizar un solo `h1` principal.
-- [ ] Utilizar `h2` para las secciones.
-- [ ] Utilizar `h3` para los nombres de productos.
-- [ ] Mantener cada producto dentro de un `article`.
-- [ ] Convertir las direcciones externas en enlaces con texto visible.
+- [x] Mantener el documento HTML5 completo.
+- [x] Utilizar un solo `h1` principal.
+- [x] Utilizar `h2` para las secciones.
+- [x] Utilizar `h3` para los nombres de productos.
+- [x] Mantener cada producto dentro de un `article`.
+- [x] Convertir las direcciones externas en enlaces con texto visible.
 - [ ] Agregar una navegación con cuatro secciones generales.
 - [ ] Agregar los `id` que correspondan a los enlaces internos.
 - [ ] Crear una sección de bienvenida.
 - [ ] Crear una sección sobre retiro en tienda física.
-- [ ] Mantener el laboratorio sin CSS, JavaScript, PHP ni Bootstrap.
+- [x] Mantener el laboratorio sin CSS, JavaScript, PHP ni Bootstrap.
 - [ ] Probar todos los enlaces desde `localhost`.
 - [ ] Revisar antes de hacer `commit` y `push`.
 
