@@ -33,3 +33,5 @@ Cada concepto nuevo se guardará en el archivo correspondiente e incluirá, cuan
 - [x] Laboratorio 1.1 — Primera estructura de la tienda.
 - [x] Lección 1.2 — Imágenes, rutas y atributos importantes.
 - [x] Laboratorio 1.2 — Imágenes locales y rutas relativas.
+
+- [ ] Lección 1.3 — Listas e información semántica (en curso).
