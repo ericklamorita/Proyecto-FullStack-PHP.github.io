@@ -803,3 +803,94 @@ Correcciones de presentación recomendadas:
 - Confirmar que `assets/images/` coincida con el nombre real de la carpeta antes de publicar.
 
 > El resultado fue aprobado a partir del código presentado en la conversación. El código del proyecto debe subirse después de probarlo localmente.
+
+
+---
+
+## Lección 1.4 — Tablas semánticas
+
+### 1.4.1 Cuándo utilizar una tabla
+
+Una tabla sirve para organizar datos que poseen una relación clara entre filas y columnas. No debe utilizarse para acomodar visualmente las partes de una página; esa tarea corresponderá a CSS.
+
+Ejemplos adecuados:
+
+- Comparar productos.
+- Mostrar horarios.
+- Presentar precios o inventarios.
+- Organizar resultados y estadísticas.
+
+### 1.4.2 Estructura básica
+
+```html
+<table>
+    <caption>Comparación de productos</caption>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Capacidad</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cargador de teléfono</td>
+            <td>10 Amp</td>
+            <td>₡1.900</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+| Elemento | Función |
+|---|---|
+| `table` | Contiene toda la tabla |
+| `caption` | Describe el propósito de la tabla |
+| `thead` | Agrupa los encabezados |
+| `tbody` | Agrupa los datos principales |
+| `tr` | Crea una fila |
+| `th` | Define una celda de encabezado |
+| `td` | Define una celda de datos |
+
+### 1.4.3 Relación entre filas y columnas
+
+Cada elemento `tr` representa una fila. Dentro de una misma fila debe conservarse el mismo orden de columnas.
+
+```text
+Producto | Capacidad | Precio
+Producto | Capacidad | Precio
+```
+
+Si el encabezado coloca primero el producto, después la capacidad y finalmente el precio, cada fila de datos debe respetar ese orden.
+
+### 1.4.4 Alcance de los encabezados
+
+El atributo `scope` ayuda a indicar qué datos identifica un encabezado:
+
+```html
+<th scope="col">Producto</th>
+<th scope="col">Capacidad</th>
+<th scope="col">Precio</th>
+```
+
+- `scope="col"`: encabezado de una columna.
+- `scope="row"`: encabezado de una fila.
+
+### Errores frecuentes
+
+- Utilizar tablas para diseñar la distribución de toda la página.
+- Escribir diferente cantidad de celdas en filas equivalentes.
+- Omitir los encabezados `th`.
+- Colocar elementos `td` directamente dentro de `table`, sin una fila `tr`.
+- Copiar información que no coincide con los productos reales.
+
+### Laboratorio 1.4 — Comparación de productos
+
+1. Crear una nueva sección después de `section id="productos"`.
+2. Utilizar el identificador `comparacion`.
+3. Agregar un título `h2`.
+4. Crear una tabla con `caption`, `thead` y `tbody`.
+5. Utilizar cuatro columnas: producto, capacidad, color y precio.
+6. Agregar una fila por cada uno de los tres productos.
+7. Agregar `scope="col"` a los cuatro encabezados.
+8. No utilizar todavía CSS, JavaScript, PHP ni Bootstrap.
