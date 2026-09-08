@@ -603,3 +603,34 @@ Restricciones del laboratorio:
 - No copiar el ejemplo como solución completa.
 - No hacer `push` hasta que las tres imágenes aparezcan correctamente.
 
+
+### Caso práctico: imágenes que no aparecen por una ruta incorrecta
+
+Durante el Laboratorio 1.2, las imágenes existían correctamente en el repositorio, pero HTML las buscaba en otra ubicación.
+
+Ruta escrita en el código:
+
+```html
+<img src="asserts/cargadorCelular.jpg" alt="Imagen de un cargador de teléfono">
+```
+
+Ubicación real del archivo:
+
+```text
+assets/images/cargadorCelular.jpg
+```
+
+La ruta correcta debe recorrer exactamente las mismas carpetas:
+
+```html
+<img src="assets/images/cargadorCelular.jpg" alt="Imagen de un cargador de teléfono">
+```
+
+Se encontraron dos diferencias:
+
+| Código | Repositorio | Problema |
+|---|---|---|
+| `asserts` | `assets` | El nombre de la carpeta estaba mal escrito |
+| No incluía `images/` | El archivo está dentro de `images/` | Faltaba un nivel de carpeta |
+
+Cuando una imagen no aparece, se debe comparar la ruta de `src` con la estructura real, carácter por carácter. También se puede revisar `F12 → Network`: una ruta inexistente normalmente genera un estado `404 Not Found`.
