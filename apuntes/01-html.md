@@ -634,3 +634,27 @@ Se encontraron dos diferencias:
 | No incluía `images/` | El archivo está dentro de `images/` | Faltaba un nivel de carpeta |
 
 Cuando una imagen no aparece, se debe comparar la ruta de `src` con la estructura real, carácter por carácter. También se puede revisar `F12 → Network`: una ruta inexistente normalmente genera un estado `404 Not Found`.
+
+### Resultado del Laboratorio 1.2
+
+**Estado: aprobado.** Las tres imágenes locales cargaron correctamente porque las rutas de `src` coinciden con la estructura existente en el proyecto.
+
+Conceptos comprobados:
+
+- [x] Crear una carpeta organizada para imágenes.
+- [x] Utilizar `img` con `src` y `alt`.
+- [x] Escribir rutas relativas desde `index.php`.
+- [x] Hacer coincidir carpetas, nombres y extensiones.
+- [x] Diagnosticar una imagen rota comparando la ruta con la estructura real.
+
+#### Mejora pendiente de nomenclatura
+
+Actualmente el proyecto utiliza `asserts/images/`. Las imágenes funcionan porque la carpeta y el código coinciden, pero el nombre convencional para recursos web es `assets`:
+
+| Actual | Recomendado |
+|---|---|
+| `asserts/images/` | `assets/images/` |
+
+Si se renombra la carpeta, también deben actualizarse las tres rutas de `src` en el mismo cambio.
+
+> Aprendizaje principal: el navegador no interpreta la intención del nombre; solamente comprueba que la ruta escrita coincida exactamente con la ubicación real.
