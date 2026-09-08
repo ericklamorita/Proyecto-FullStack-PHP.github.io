@@ -32,16 +32,19 @@
 
             <article id="cargador-telefono">
                 <h3>Cargador de teléfono</h3>
+                <img src="asserts/cargadorCelular.jpg" alt="imagen de cargador de telefono">
                 <a href= "https://extremetechcr.com/producto/cargador-de-pared-unno-tekno-10a-pw5059wt/"> Ver cargador de telefono</a>
                 <p>Precio: ₡1.900</p>
             </article>
             <article id="cargador-carro">
                 <h3>Cargador para carro</h3>
+                <img src="asserts/cargadorCarro.jpg" alt="imagen de cargador para carro">
                 <a href= "https://extremetechcr.com/producto/cargador-para-carro-imexx-dual-2-1-amp-ime-41247/"> Ver cargador para carro</a>
                 <p>Precio: ₡1.000</p>
             </article>
             <article id="bateria-portatil">
                 <h3>Bateria Portatil</h3>
+                <img src="asserts/cargadorPortatil.jpg" alt="imagen de bateria portatil">
                 <a href= "https://extremetechcr.com/producto/cargador-unno-tekno-portatil-power-pro-super-fast-dual-port-20w-negro-pw5067bk/"> Ver bateria portatil</a>
                 <p>Precio: ₡3.000</p>
             </article>
