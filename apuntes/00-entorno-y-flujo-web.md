@@ -151,3 +151,45 @@ Editar → Guardar → Probar en localhost → Commit → Push
 - Hacer `push` no cambia lo que XAMPP muestra en la computadora.
 
 Los errores intencionales de un laboratorio deben corregirse antes de hacer `commit` y `push`.
+
+## 0.9 GitHub Pages y PHP
+
+GitHub Pages sirve archivos estáticos directamente al navegador.
+
+| Tecnología o archivo | GitHub Pages |
+|---|---|
+| HTML | Sí |
+| CSS | Sí |
+| JavaScript del navegador | Sí |
+| Imágenes | Sí |
+| `index.html` | Puede utilizarse como página principal |
+| PHP | No se ejecuta |
+| MySQL | No está disponible |
+| `index.php` | No funciona como una aplicación PHP |
+
+### Motivo
+
+PHP necesita un servidor que tenga instalado un intérprete de PHP. GitHub Pages entrega archivos estáticos, pero no procesa código en el servidor.
+
+```text
+GitHub Pages → HTML, CSS, JavaScript e imágenes
+Servidor con PHP → Apache/Nginx + PHP + posible base de datos
+```
+
+Durante la etapa actual se decidió continuar con `index.php` mediante XAMPP. Cuando el proyecto necesite publicarse con PHP y MySQL, se elegirá un alojamiento compatible con esas tecnologías.
+
+### Nombre especial de un sitio personal
+
+Para obtener una dirección personal como:
+
+```text
+https://usuario.github.io/
+```
+
+el repositorio debe llamarse exactamente:
+
+```text
+usuario.github.io
+```
+
+Agregar `.github.io` al final de cualquier nombre de proyecto no lo convierte automáticamente en el sitio personal principal.
