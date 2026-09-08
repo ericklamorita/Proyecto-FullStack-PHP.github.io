@@ -780,3 +780,26 @@ El aviso de retiro puede escribirse de forma más natural así:
 ```
 
 > Nota: el código revisado fue presentado en la conversación. El archivo `index.php` de GitHub todavía contiene la versión anterior del laboratorio.
+
+
+### Resultado final del Laboratorio 1.3
+
+**Estado: aprobado — 10/10.**
+
+La versión final presentada cumple los requisitos:
+
+- [x] Tres productos representados mediante `article`.
+- [x] Una lista `ul` con tres características en cada producto.
+- [x] Una lista `ol` con los pasos del retiro en tienda.
+- [x] Un aviso importante mediante `strong`.
+- [x] Conservación de imágenes, enlaces, precios y estructura semántica.
+- [x] Uso correcto de `h2` para la sección y `h3` para cada producto.
+
+Correcciones de presentación recomendadas:
+
+- Escribir la apertura como `<section id="productos">`.
+- Evitar espacios innecesarios al principio del contenido de `li`.
+- Escribir `Batería portátil`, `teléfono` y `10 000 mAh` en el texto visible.
+- Confirmar que `assets/images/` coincida con el nombre real de la carpeta antes de publicar.
+
+> El resultado fue aprobado a partir del código presentado en la conversación. El código del proyecto debe subirse después de probarlo localmente.
