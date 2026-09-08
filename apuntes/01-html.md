@@ -658,3 +658,91 @@ Actualmente el proyecto utiliza `asserts/images/`. Las imágenes funcionan porqu
 Si se renombra la carpeta, también deben actualizarse las tres rutas de `src` en el mismo cambio.
 
 > Aprendizaje principal: el navegador no interpreta la intención del nombre; solamente comprueba que la ruta escrita coincida exactamente con la ubicación real.
+
+---
+
+## Lección 1.3 — Listas e información semántica
+
+### 1.3.1 Lista no ordenada: `ul`
+
+Se utiliza cuando el orden de los elementos no cambia su significado.
+
+```html
+<h3>Servicios disponibles</h3>
+<ul>
+    <li>Préstamo de libros</li>
+    <li>Salas de estudio</li>
+    <li>Acceso a computadoras</li>
+</ul>
+```
+
+- `ul` significa *unordered list*.
+- `li` representa cada elemento de la lista.
+- El navegador muestra viñetas de forma predeterminada.
+
+### 1.3.2 Lista ordenada: `ol`
+
+Se utiliza cuando existe una secuencia, prioridad o procedimiento.
+
+```html
+<h3>Cómo solicitar un préstamo</h3>
+<ol>
+    <li>Buscar el libro.</li>
+    <li>Presentar la identificación.</li>
+    <li>Registrar la fecha de devolución.</li>
+</ol>
+```
+
+Cambiar el orden de estos pasos afectaría el proceso, por eso corresponde utilizar `ol`.
+
+### 1.3.3 Lista de descripción: `dl`
+
+Relaciona términos con sus descripciones o valores.
+
+```html
+<dl>
+    <dt>Autor</dt>
+    <dd>Antoine de Saint-Exupéry</dd>
+
+    <dt>Formato</dt>
+    <dd>Tapa blanda</dd>
+</dl>
+```
+
+| Elemento | Función |
+|---|---|
+| `dl` | Contiene la lista de descripciones |
+| `dt` | Representa el término o nombre del dato |
+| `dd` | Representa la descripción o valor |
+
+Una `dl` resulta útil para especificaciones de productos, glosarios y pares como “Marca: X” o “Capacidad: Y”.
+
+### 1.3.4 Cómo elegir la lista correcta
+
+| Necesidad | Elemento |
+|---|---|
+| Características sin un orden obligatorio | `ul` |
+| Instrucciones o pasos consecutivos | `ol` |
+| Nombre de una propiedad y su valor | `dl`, `dt`, `dd` |
+
+No se deben crear listas escribiendo guiones y saltos de línea dentro de un párrafo. Las etiquetas de lista comunican correctamente la estructura a navegadores y lectores de pantalla.
+
+### 1.3.5 Importancia con `strong`
+
+`strong` indica que una parte del contenido tiene importancia especial:
+
+```html
+<p><strong>Importante:</strong> presentar identificación para retirar.</p>
+```
+
+No debe utilizarse únicamente para “poner letras gruesas”. Su función principal es semántica; la apariencia se controlará más adelante mediante CSS.
+
+### Laboratorio 1.3 — Información de productos y pasos de retiro
+
+1. Agregar a cada producto una lista `ul` con al menos tres características.
+2. Agregar en la sección de retiro una lista `ol` con al menos tres pasos.
+3. Incluir un mensaje importante mediante `strong` dentro de la sección de retiro.
+4. Mantener la jerarquía de encabezados ya construida.
+5. No utilizar CSS, JavaScript, PHP ni Bootstrap todavía.
+
+El contenido debe ser escrito por Erick. Los ejemplos de la lección sirven como referencia de estructura y no como solución para la tienda.
