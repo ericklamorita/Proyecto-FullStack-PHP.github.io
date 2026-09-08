@@ -516,6 +516,42 @@ minúsculas + sin tildes + palabras-separadas-por-guiones
 
 Esta convención reduce errores al relacionar HTML, CSS y JavaScript.
 
+## 1.13 Un solo título principal y coincidencia exacta de destinos
+
+Normalmente cada página debe tener un `h1` que identifique su tema principal. Los títulos de las secciones internas continúan con `h2`.
+
+```html
+<h1>Tienda Don Erick</h1>
+
+<section id="inicio">
+    <h2>Bienvenidos a Tienda Don Erick</h2>
+</section>
+```
+
+Agregar otro `h1` a la bienvenida hace que ambos títulos parezcan tener el mismo nivel jerárquico. En este proyecto se mantendrá un solo `h1` por página para conservar una estructura sencilla y clara.
+
+Los destinos internos distinguen mayúsculas, minúsculas, guiones y formas diferentes de escribir una palabra. Por eso esta pareja no coincide:
+
+```html
+<a href="#Retiro-en-tienda">Retiro</a>
+<section id="retiroEnTienda">
+```
+
+Debe utilizarse exactamente el mismo identificador:
+
+```html
+<a href="#retiro">Retiro</a>
+<section id="retiro">
+```
+
+### Lista de comprobación para un enlace interno
+
+1. El `href` comienza con `#`.
+2. El texto posterior a `#` existe como un `id`.
+3. Ambos valores son exactamente iguales.
+4. El `id` no se repite.
+5. Se utiliza la convención de minúsculas, sin tildes y con guiones.
+
 ---
 
 # Práctica actual
