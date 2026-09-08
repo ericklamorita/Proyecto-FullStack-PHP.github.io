@@ -556,6 +556,35 @@ Debe utilizarse exactamente el mismo identificador:
 
 # Práctica actual
 
+## Resultado final del Laboratorio 1.1
+
+**Estado: aprobado.** La versión final contiene un documento HTML5 completo, estructura semántica, jerarquía correcta de encabezados, navegación interna, tres productos independientes, retiro en tienda y contacto.
+
+| Criterio | Resultado |
+|---|---:|
+| Documento HTML completo | 3/3 |
+| Etiquetas semánticas | 3/3 |
+| Jerarquía de encabezados | 2/2 |
+| Anidamiento e indentación | 1/1 |
+| Contenido solicitado | 1/1 |
+| **Calificación** | **10/10** |
+
+Corrección menor recomendada antes del commit del código:
+
+```html
+<!-- Evitar la tilde dentro del identificador -->
+<article id="cargador-telefono">
+```
+
+Los cuatro pares de navegación quedaron definidos así:
+
+| Enlace | Destino |
+|---|---|
+| `href="#inicio"` | `id="inicio"` |
+| `href="#productos"` | `id="productos"` |
+| `href="#retiro"` | `id="retiro"` |
+| `href="#contacto"` | `id="contacto"` |
+
 ## Laboratorio 1.1 — Primera estructura de la tienda
 
 Archivo de trabajo:
