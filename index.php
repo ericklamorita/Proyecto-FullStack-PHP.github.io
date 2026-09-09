@@ -17,7 +17,7 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#retiro">Retiro en tienda</a></li>
-                <li><a href="#compraracion">Comparacion de productos</a></li>
+                <li><a href="#comparacion">Comparacion de productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -80,7 +80,7 @@
 
             </ol>
         </section>
-        <section id="compraracion">
+        <section id="comparacion">
             <h2> Comparacion de productos </h2>
             <table>
                 <caption> Comparacion de productos</caption>
@@ -89,6 +89,7 @@
                         <th scope="col">Productos</th>
                         <th scope="col">Capacidad</th>
                         <th scope="col">Precio</th>
+                        <th scope="col">Color</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -96,16 +97,19 @@
                         <td>cargador de telefono</td>
                         <td>10 Amp</td>
                         <td> precio: ₡1.900</td>
+                        <td>Blanco</td>
                     </tr>
                     <tr>
                         <td>cargador para carro</td>
                         <td>2.1 Amp</td>
                         <td> precio: ₡1.000</td>
+                        <td>Blanco</td>
                     </tr>
                     <tr>
                         <td>bateria portatil</td>
                         <td>10000mAh</td>
                         <td> precio: ₡3.000</td>
+                        <td>Negro</td>
                     </tr>
 
                 </tbody>
